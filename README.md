@@ -1,9 +1,10 @@
-[![ARTYINS Architecture](https://github.com/jax79sg/artyins-classifierservice/raw/master/SoftwareArchitecture.jpg)]
+[![ARTYINS Architecture](https://github.com/jax79sg/artyins/raw/master/SoftwareArchitecture.jpg)]
 
 # ARTYINS architecture
 This is the main module for the ARTYINS architecture. 
 
-[![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
+[Classifier Service](https://gihub.com/jax79sg/artyins-classifierservice)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
 
 ---
 
