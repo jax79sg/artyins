@@ -1,4 +1,4 @@
-[![ARTYINS Architecture](https://github.com/jax79sg/artyins-classifierservice/raw/master/SoftwareArchitecture.jpg)]()
+[![ARTYINS Architecture](https://github.com/jax79sg/artyins-classifierservice/raw/master/SoftwareArchitecture.jpg)]
 
 # ARTYINS architecture
 This is the main module for the ARTYINS architecture. 
