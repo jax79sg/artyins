@@ -1,9 +1,9 @@
-[![Classifier Service](https://github.com/jax79sg/artyins-classifierservice/raw/master/SoftwareArchitecture-MonitorService.jpg)]()
+[![ARTYINS Architecture](https://github.com/jax79sg/artyins-classifierservice/raw/master/SoftwareArchitecture.jpg)]()
 
-# Classifier Service For artyins architecture
-This is a submodule for the artyins architecture. Please refer to main module for full build details.
+# ARTYINS architecture
+This is the main module for the ARTYINS architecture. 
 
-[![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
+Classifier Service [![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
 
 ---
 
