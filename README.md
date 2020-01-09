@@ -3,25 +3,31 @@
 # ARTYINS architecture
 This is the main module for the ARTYINS architecture. 
 
-[Classifier Service](https://gihub.com/jax79sg/artyins-classifierservice)
+[Database](https://github.com/jax79sg/artyins-database)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins-database.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-database)
+
+[Job Service](https://github.com/jax79sg/artyins-jobservice)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins-jobservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-jobservice)
+
+[Extraction Service](https://github.com/jax79sg/artyins-extractionservice)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins-extractionservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-extractionservice)
+
+[Classifier Service](https://github.com/jax79sg/artyins-classifierservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
-[Saver Service](https://gihub.com/jax79sg/artyins-saveservice)
+
+[Saver Service](https://github.com/jax79sg/artyins-saveservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-saveservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-saveservice)
 
 ---
 
 ## Table of Contents 
 
-> If your `README` has a lot of info, section headers might be nice.
-
 - [Installation](#installation)
 - [Features](#features)
 
-
-
 ---
 
-## Example (Optional)
+## Example 
 
 ```javascript
 ```
@@ -33,9 +39,9 @@ This is the main module for the ARTYINS architecture.
 source venv/bin/activate
 pip install -r requirements.txt`
 
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
+## Usage 
+## Documentation 
+## Tests 
 
 ---
 
