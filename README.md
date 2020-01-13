@@ -11,9 +11,11 @@ This is the main module for the ARTYINS architecture.
 
 [Extraction Service](https://github.com/jax79sg/artyins-extractionservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-extractionservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-extractionservice)
+[![Container Status](https://quay.io/repository/jax79sg/artyins-extractionservice/status)](https://quay.io/repository/jax79sg/artyins-extractionservice)
 
 [Classifier Service](https://github.com/jax79sg/artyins-classifierservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-classifierservice.svg?token=BREzYzgtHGHQp4of21Xp&branch=master)](https://travis-ci.com/jax79sg/artyins-classifierservice)
+[![Container Status](https://quay.io/repository/jax79sg/artyins-classifierservice/status)](https://quay.io/repository/jax79sg/artyins-classifierservice)
 
 [Saver Service](https://github.com/jax79sg/artyins-saveservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-saveservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-saveservice)
