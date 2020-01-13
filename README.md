@@ -21,6 +21,9 @@ This is the main module for the ARTYINS architecture.
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-saveservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-saveservice)
 [![Container Status](https://quay.io/repository/jax79sg/artyins-saveservice/status)](https://quay.io/repository/jax79sg/artyins-saveservice)
 
+[Monitor Service](https://github.com/jax79sg/artyins-monitor)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins-monitor.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-monitor)
+[![Container Status](https://quay.io/repository/jax79sg/artyins-monitor/status)](https://quay.io/repository/jax79sg/artyins-monitor)
 ---
 
 ## Table of Contents 
