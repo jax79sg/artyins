@@ -8,6 +8,7 @@ This is the main module for the ARTYINS architecture.
 
 [Job Service](https://github.com/jax79sg/artyins-jobservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-jobservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-jobservice)
+[![Container Status](https://quay.io/repository/jax79sg/artyins-jobservice/status)](https://quay.io/repository/jax79sg/artyins-jobservice)
 
 [Extraction Service](https://github.com/jax79sg/artyins-extractionservice)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-extractionservice.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-extractionservice)
