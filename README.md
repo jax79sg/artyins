@@ -108,7 +108,7 @@ docker save artyins-saveservice -o /media/myusbdrive/artyins-saveservice.tar
 docker save artyins-monitor -o /media/myusbdrive/artyins-monitor.tar
 ```
 
-Copying to the offline computer
+Copying to the offline computer, asuming at `/home/user/`
 ```bash
 cp -r /media/myusbdrive/* /home/user/
 ```
@@ -116,7 +116,7 @@ cp -r /media/myusbdrive/* /home/user/
 ## Running the application
 Upon running the following commands, you will see scrolling logs.
 ```bash
-cd /home/user/artyin
+cd /home/user/artyins
 ./runartyins.sh
 ```
 
