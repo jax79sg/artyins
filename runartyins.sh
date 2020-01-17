@@ -4,5 +4,5 @@ mkdir ./shareddata
 mkdir ./shareddata/new
 mkdir ./shareddata/processing
 mkdir ./shareddata/success
-mkdir ./sharedata/fail
+mkdir ./shareddata/fail
 docker-compose up --force-recreate --remove-orphans
