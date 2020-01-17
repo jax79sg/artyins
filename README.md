@@ -41,7 +41,7 @@ The general idea is as follows
 2. Transfer this project and the docker images to a non-internet connected environment.
 3. Run docker-compose up
 
-### Downloading pre-made docker images. Internet required.
+### 1a: Downloading pre-made docker images. Internet required.
 All docker images are available in quay.io/jax79sg/. You may run the following commands to download the images. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
 ```bash
 docker pull quay.io/jax79sg/artyins-database
@@ -56,9 +56,10 @@ docker pull quay.io/jax79sg/artyins-saveservice
 docker tag quay.io/jax79sg/artyins-saveservice artyins-saveservice
 docker pull quay.io/jax79sg/artyins-monitor
 docker tag quay.io/jax79sg/artyins-monitor artyins-monitor
+docker pull mysql:5.7
 ```
 
-### Rebuilding the images. Internet required
+### 1b: Rebuilding the images. Internet required
 Alternatively, you may rebuild the images from scratch. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
 ```bash
 git clone https://github.com/jax79sg/artyins-database
@@ -81,10 +82,38 @@ cd ../artyins-saveservice
 cd ../artyins-monitor
 ./rebuild.sh
 ```
+### Transfer to offline env
+Copying to USB Drive, assuming that the USB disk is on /media/myusbdrive
+```bash
+git clone https://github.com/jax79sg/artyin
+cp -r artyin /media/myusbdrive/
 
-
-```javascript
+docker save mysql:5.7 -o /media/myusbdrive/mysql.tar
+docker save artyins-jobservice -o /media/myusbdrive/artyins-jobservice.tar
+docker save artyins-extractionservice -o /media/myusbdrive/artyins-extractionservice.tar
+docker save artyins-classifierservice -o /media/myusbdrive/artyins-classifierservice.tar
+docker save artyins-saveservice -o /media/myusbdrive/artyins-saveservice.tar
+docker save artyins-monitor -o /media/myusbdrive/artyins-monitor.tar
 ```
+
+Copying to the offline computer
+```bash
+cp -r /media/myusbdrive/* /home/user/
+```
+
+### Run the application
+Upon running the following commands, you will see scrolling logs.
+```bash
+cd /home/user/artyin
+./runartyins.sh
+```
+
+### Using the application
+The users can simply copy their raw reports in PDF into the `/home/user/artyins/shareddata/new` folder. <br>
+When the system pick up the files, it will be moved into the `/home/user/artyins/shareddata/processing` folder <br>
+Depending on outcomes, the file will eventually be moved to `/home/user/artyins/shareddata/success` or `/home/user/artyins/shareddata/fail` folders.
+
+
 
 ---
 
