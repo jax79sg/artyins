@@ -29,12 +29,59 @@ This is the main module for the ARTYINS architecture.
 
 ## Table of Contents 
 
-- [Installation](#installation)
+- [Installation](#Installation)
 - [Features](#features)
 
 ---
 
-## Example 
+## Installation
+The general idea is as follows
+1. Either download the pre-made docker images or build the docker images yourself
+2. Clone this project
+2. Transfer this project and the docker images to a non-internet connected environment.
+3. Run docker-compose up
+
+### Downloading pre-made docker images. Internet required.
+All docker images are available in quay.io/jax79sg/. You may run the following commands to download the images. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
+```bash
+docker pull quay.io/jax79sg/artyins-database
+docker tag quay.io/jax79sg/artyins-database artyins-database
+docker pull quay.io/jax79sg/artyins-jobservice
+docker tag quay.io/jax79sg/artyins-jobservice artyins-jobservice
+docker pull quay.io/jax79sg/artyins-extractionservice
+docker tag quay.io/jax79sg/artyins-extractionservice artyins-extractionservice
+docker pull quay.io/jax79sg/artyins-classifierservice
+docker tag quay.io/jax79sg/artyins-classifierservice artyins-classifierservice
+docker pull quay.io/jax79sg/artyins-saveservice
+docker tag quay.io/jax79sg/artyins-saveservice artyins-saveservice
+docker pull quay.io/jax79sg/artyins-monitor
+docker tag quay.io/jax79sg/artyins-monitor artyins-monitor
+```
+
+### Rebuilding the images. Internet required
+Alternatively, you may rebuild the images from scratch. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
+```bash
+git clone https://github.com/jax79sg/artyins-database
+git clone https://github.com/jax79sg/artyins-jobservice
+git clone https://github.com/jax79sg/artyins-extractionservice
+git clone https://github.com/jax79sg/artyins-classifierservice
+git clone https://github.com/jax79sg/artyins-saveservice
+git clone https://github.com/jax79sg/artyins-monitor
+
+cd /artyins-jobservice
+./rebuild.sh
+cd ../artyins-extractionservice
+./rebuild.sh
+cd ../artyins-jobservice
+./rebuild.sh
+cd ../artyins-classifierservice
+./rebuild.sh
+cd ../artyins-saveservice
+./rebuild.sh
+cd ../artyins-monitor
+./rebuild.sh
+```
+
 
 ```javascript
 ```
