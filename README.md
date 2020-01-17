@@ -30,8 +30,8 @@ This is the main module for the ARTYINS architecture.
 ## Table of Contents 
 
 - [Installation](#Installation)
-- [Running the application](#Running the application)
-- [Using the application](#Using the application)
+- [Running the application](#Runningtheapplication)
+- [Using the application](#Usingtheapplication)
 
 ---
 
