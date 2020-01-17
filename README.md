@@ -28,12 +28,25 @@ This is the main module for the ARTYINS architecture.
 ---
 
 ## Table of Contents 
-
+- [Overview](#Overview)
 - [Installation](#Installation)
 - [Running the application](#Running-the-application)
 - [Using the application](#Using-the-application)
 
 ---
+## Overview
+The whole set of application is held by several submodules. Each module has their functions and serves to fulfill specific functions.
+
+### Monitor
+The `monitor`  serves to monitor the files on the target folder. Upon detecting new files, it would request the `JobService` to create a new job, at the same time moving the file to processing folder. When a positive reply is received from the `JobService`, it would move the file to success folder, otherwise, it would be sent to the fail folder.
+
+### JobService
+The `JobService` is the main controller of the application. When it receives a new request from the `Monitor`, it would send a request to the following services in this order `ExtractionService`, `ClassifierService`, `SaveService`. Finally, it would reply to the `Monitor` on the status of the job.
+
+### ExtractionService
+The `ExtractionService` receives requests to extract content from a file. It requires access to the folder where the file is held. Upon extraction of the content, it sends the content back to the caller.
+
+
 
 ## Installation
 The general idea is as follows
@@ -121,17 +134,6 @@ password='password'
 database='reportdb'
 tables = 'reports', 'ingests'
 ```
-
----
-
-## Virtual Environment
-`python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt`
-
-## Usage 
-## Documentation 
-## Tests 
 
 ---
 
