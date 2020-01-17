@@ -52,9 +52,6 @@ The `ClassifierService` receives requests to classify a set of text. Upon classi
 ### SaveService
 The `SaveService` receives requests to interact with a storage. Upon saving, it sends a json string which will specify the errors, if any.
 
-### Monitor
-The `Monitor` continuously monitor a folder for new files. Upon detection, it calls the `JobService` to start a new job.
-
 ## Installation
 The general idea is as follows
 1. Either download the pre-made docker images or build the docker images yourself
