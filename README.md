@@ -58,8 +58,6 @@ The general idea is as follows
 ### 1a: Downloading pre-made docker images. Internet required.
 All docker images are available in quay.io/jax79sg/. You may run the following commands to download the images. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
 ```bash
-docker pull quay.io/jax79sg/artyins-database
-docker tag quay.io/jax79sg/artyins-database artyins-database
 docker pull quay.io/jax79sg/artyins-jobservice
 docker tag quay.io/jax79sg/artyins-jobservice artyins-jobservice
 docker pull quay.io/jax79sg/artyins-extractionservice
