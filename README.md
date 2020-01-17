@@ -97,7 +97,7 @@ cd ../artyins-monitor
 ### Transfer to offline env
 Copying to USB Drive, assuming that the USB disk is on /media/myusbdrive
 ```bash
-git clone https://github.com/jax79sg/artyin
+git clone https://github.com/jax79sg/artyins
 cp -r artyin /media/myusbdrive/
 
 docker save mysql:5.7 -o /media/myusbdrive/mysql.tar
