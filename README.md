@@ -113,14 +113,14 @@ The users can simply copy their raw reports in PDF into the `/home/user/artyins/
 When the system pick up the files, it will be moved into the `/home/user/artyins/shareddata/processing` folder <br>
 Depending on outcomes, the file will eventually be moved to `/home/user/artyins/shareddata/success` or `/home/user/artyins/shareddata/fail` folders.
 
-All results can be accessed via the mysqldb exposed under port 3306, with following parameters.
+All results can be accessed via the mysqldb exposed under port 3306, with following parameters. More information on the database schema can be found in http://github.com/jax79sg/artyins-database
 ```python
 username='user'
 password='password'
 database='reportdb'
 tables = 'reports', 'ingests'
 ```
-More information on the database schema can be found in http://github.com/jax79sg/artyins-database#schema
+
 ---
 
 ## Virtual Environment
