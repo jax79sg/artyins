@@ -46,7 +46,14 @@ The `JobService` is the main controller of the application. When it receives a n
 ### ExtractionService
 The `ExtractionService` receives requests to extract content from a file. It requires access to the folder where the file is held. Upon extraction of the content, it sends the content back to the caller.
 
+### ClassifierService
+The `ClassifierService` receives requests to classify a set of text. Upon classification, it sends the classified Class to the caller.
 
+### SaveService
+The `SaveService` receives requests to interact with a storage. Upon saving, it sends a json string which will specify the errors, if any.
+
+### Monitor
+The `Monitor` continuously monitor a folder for new files. Upon detection, it calls the `JobService` to start a new job.
 
 ## Installation
 The general idea is as follows
