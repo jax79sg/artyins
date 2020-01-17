@@ -30,7 +30,8 @@ This is the main module for the ARTYINS architecture.
 ## Table of Contents 
 
 - [Installation](#Installation)
-- [Features](#features)
+- [Running the application](#Running the application)
+- [Using the application](#Using the application)
 
 ---
 
@@ -101,14 +102,14 @@ Copying to the offline computer
 cp -r /media/myusbdrive/* /home/user/
 ```
 
-### Running the application
+## Running the application
 Upon running the following commands, you will see scrolling logs.
 ```bash
 cd /home/user/artyin
 ./runartyins.sh
 ```
 
-### Using the application
+## Using the application
 The users can simply copy their raw reports in PDF into the `/home/user/artyins/shareddata/new` folder. <br>
 When the system pick up the files, it will be moved into the `/home/user/artyins/shareddata/processing` folder <br>
 Depending on outcomes, the file will eventually be moved to `/home/user/artyins/shareddata/success` or `/home/user/artyins/shareddata/fail` folders.
