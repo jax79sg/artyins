@@ -46,7 +46,11 @@ The `JobService` is the main controller of the application. When it receives a n
 ### ExtractionService
 The `ExtractionService` receives requests to extract content from a file. It requires access to the folder where the file is held. Upon extraction of the content, it sends the content back to the caller.
 
+### ClassifierService
+The `ClassifierService` receives requests to classify a set of text. Upon classification, it sends the classified Class to the caller.
 
+### SaveService
+The `SaveService` receives requests to interact with a storage. Upon saving, it sends a json string which will specify the errors, if any.
 
 ## Installation
 The general idea is as follows
@@ -58,8 +62,6 @@ The general idea is as follows
 ### 1a: Downloading pre-made docker images. Internet required.
 All docker images are available in quay.io/jax79sg/. You may run the following commands to download the images. After running the commands, you should see docker images such as artyins-database, artyins-jobservice..etc in your local docker repository.
 ```bash
-docker pull quay.io/jax79sg/artyins-database
-docker tag quay.io/jax79sg/artyins-database artyins-database
 docker pull quay.io/jax79sg/artyins-jobservice
 docker tag quay.io/jax79sg/artyins-jobservice artyins-jobservice
 docker pull quay.io/jax79sg/artyins-extractionservice
@@ -99,7 +101,7 @@ cd ../artyins-monitor
 ### Transfer to offline env
 Copying to USB Drive, assuming that the USB disk is on /media/myusbdrive
 ```bash
-git clone https://github.com/jax79sg/artyin
+git clone https://github.com/jax79sg/artyins
 cp -r artyin /media/myusbdrive/
 
 docker save mysql:5.7 -o /media/myusbdrive/mysql.tar
@@ -110,7 +112,7 @@ docker save artyins-saveservice -o /media/myusbdrive/artyins-saveservice.tar
 docker save artyins-monitor -o /media/myusbdrive/artyins-monitor.tar
 ```
 
-Copying to the offline computer
+Copying to the offline computer, asuming at `/home/user/`
 ```bash
 cp -r /media/myusbdrive/* /home/user/
 ```
@@ -118,7 +120,7 @@ cp -r /media/myusbdrive/* /home/user/
 ## Running the application
 Upon running the following commands, you will see scrolling logs.
 ```bash
-cd /home/user/artyin
+cd /home/user/artyins
 ./runartyins.sh
 ```
 
