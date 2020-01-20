@@ -11,6 +11,6 @@ install:
   - docker tag quay.io/jax79sg/artyins-monitor artyins-monitor
   - docker pull mysql:5.7
   - git clone https://github.com/jax79sg/artyins 
-
-script:
   - cd artyins && ./runartyins.sh
+script:
+  - echo "This is Jax testing" > /artyins/shareddata/new
