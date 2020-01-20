@@ -1,7 +1,10 @@
-[![ARTYINS Architecture](https://github.com/jax79sg/artyins/raw/master/SoftwareArchitecture.jpg)]
+![ARTYINS Architecture](https://github.com/jax79sg/artyins/raw/master/SoftwareArchitecture.jpg)
 
 # ARTYINS architecture
 This is the main module for the ARTYINS architecture. 
+[ArtyINS](https://github.com/jax79sg/artyins)
+- [![Build Status](https://travis-ci.com/jax79sg/artyins.svg?branch=master)](https://travis-ci.com/jax79sg/artyins)
+
 
 [Database](https://github.com/jax79sg/artyins-database)
 - [![Build Status](https://travis-ci.com/jax79sg/artyins-database.svg?branch=master)](https://travis-ci.com/jax79sg/artyins-database)
