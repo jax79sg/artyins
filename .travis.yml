@@ -1,0 +1,16 @@
+install:
+  - docker pull quay.io/jax79sg/artyins-jobservice
+  - docker tag quay.io/jax79sg/artyins-jobservice artyins-jobservice
+  - docker pull quay.io/jax79sg/artyins-extractionservice
+  - docker tag quay.io/jax79sg/artyins-extractionservice artyins-extractionservice
+  - docker pull quay.io/jax79sg/artyins-classifierservice
+  - docker tag quay.io/jax79sg/artyins-classifierservice artyins-classifierservice
+  - docker pull quay.io/jax79sg/artyins-saveservice
+  - docker tag quay.io/jax79sg/artyins-saveservice artyins-saveservice
+  - docker pull quay.io/jax79sg/artyins-monitor
+  - docker tag quay.io/jax79sg/artyins-monitor artyins-monitor
+  - docker pull mysql:5.7
+  - git clone https://github.com/jax79sg/artyins 
+
+script:
+  - cd artyins && ./runartyins.sh
