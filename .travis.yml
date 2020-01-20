@@ -13,4 +13,4 @@ install:
   - git clone https://github.com/jax79sg/artyins 
   - cd artyins && ./runartyins.sh
 script:
-  - echo "This is Jax testing" > /artyins/shareddata/new
+  - echo "This is Jax testing" > /artyins/shareddata/new/test.txt
