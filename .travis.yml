@@ -18,4 +18,4 @@ script:
   - ls /
   - ls /artyins
   - ls /artyins/shareddata
-  - echo "This is Jax testing" > ~/artyins/shareddata/new/test.txt
+  - echo "This is Jax testing" > /home/travis/build/jax79sg/artyins/artyins/shareddata/new/test.txt
