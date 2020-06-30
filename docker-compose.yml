@@ -1,6 +1,24 @@
 
 version: '2.1'
 services:
+  osui:
+    image: artyins-osui:latest
+    restart: always
+    ports:
+    - '888:80'
+    volumes:
+      - ./shareddata:/var/www/html/data/shareddata
+
+  metabase:
+    image: metabase/metabase:latest
+    restart: always
+    ports:
+    - '3000:3000'
+    expose:
+    - '3000'
+    depends_on:
+     mysqldb:
+      condition: service_healthy
 
   mysqldb:
     image: mysql:5.7
